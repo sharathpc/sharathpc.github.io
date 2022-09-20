@@ -367,6 +367,7 @@ figure {
 }
 
 #fh5co-about {
+	border-bottom: 1px solid lightgray;
 	.fh5co-social-icons {
 		margin: 0;
 		padding: 0;
@@ -430,12 +431,16 @@ figure {
 		background-color: lighten($brand-black, 90%);
 		left: 50%;
 		margin-left: 0px;
+		z-index: -1;
 		@include media-breakpoint-down(sm) {
 			margin-left: -64px;
 		}
 		@include media-breakpoint-down(xs) {
 			margin-left: -64px;
 		}
+	}
+	> div.timeline-heading:not(:first-child) {
+		margin-top: 5rem;
 	}
 	.timeline-heading {
 		@include media-breakpoint-down(sm) {
@@ -519,26 +524,28 @@ figure {
 				font-size: 18px;
 			}
 		}
-		&.timeline-unverted {
-			text-align: right;
-			@include media-breakpoint-down(sm) {
-				text-align: left;
-			}
-		}
-		&.timeline-inverted {
-			> .timeline-panel {
-				float: right;
-				&:before {
-					border-left-width: 0;
-					border-right-width: 15px;
-					left: -15px;
-					right: auto;
+		&.timeline-item {
+			&:nth-of-type(odd) {
+				text-align: right;
+				@include media-breakpoint-down(sm) {
+					text-align: left;
 				}
-				&:after {
-					border-left-width: 0;
-					border-right-width: 14px;
-					left: -14px;
-					right: auto;
+			}
+			&:nth-of-type(even) {
+				> .timeline-panel {
+					float: right;
+					&:before {
+						border-left-width: 0;
+						border-right-width: 15px;
+						left: -15px;
+						right: auto;
+					}
+					&:after {
+						border-left-width: 0;
+						border-right-width: 14px;
+						left: -14px;
+						right: auto;
+					}
 				}
 			}
 		}
