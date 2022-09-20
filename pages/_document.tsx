@@ -14,15 +14,12 @@ class Document extends NextDocument<Props> {
 
                     <link rel="stylesheet" href="css/animate.css" />
                     <link rel="stylesheet" href="css/icomoon.css" />
-                    <link rel="stylesheet" href="css/bootstrap.css" />
-                    <link rel="stylesheet" href="css/style.css" />
                 </Head>
                 <body>
                     <Main />
                     <NextScript />
                     <Script src="js/jquery.min.js" strategy="beforeInteractive" />
                     <Script src="js/jquery.easing.1.3.js" strategy="beforeInteractive" />
-                    <Script src="js/bootstrap.min.js" strategy="beforeInteractive" />
                     <Script src="js/jquery.waypoints.min.js" strategy="beforeInteractive" />
                     <Script src="js/main.js" strategy="beforeInteractive" />
                 </body>
