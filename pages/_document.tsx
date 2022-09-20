@@ -18,10 +18,10 @@ class Document extends NextDocument<Props> {
                 <body>
                     <Main />
                     <NextScript />
-                    <Script src="js/jquery.min.js" strategy="beforeInteractive" />
+                    {/* <Script src="js/jquery.min.js" strategy="beforeInteractive" />
                     <Script src="js/jquery.easing.1.3.js" strategy="beforeInteractive" />
                     <Script src="js/jquery.waypoints.min.js" strategy="beforeInteractive" />
-                    <Script src="js/main.js" strategy="beforeInteractive" />
+                    <Script src="js/main.js" strategy="beforeInteractive" /> */}
                 </body>
             </Html>
         )
