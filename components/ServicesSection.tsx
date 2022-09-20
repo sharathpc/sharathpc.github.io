@@ -4,7 +4,7 @@ const ServicesSection = () => {
             <div className="container">
                 <div className="services-padding">
                     <div className="row">
-                        <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                        <div className="col-md-8 offset-md-2 text-center fh5co-heading">
                             <h2>My Services</h2>
                         </div>
                     </div>

@@ -3,12 +3,12 @@ const ExperienceSection = () => {
         <div id="fh5co-resume" className="fh5co-bg-color">
             <div className="container">
                 <div className="row animate-box">
-                    <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                    <div className="col-md-8 offset-md-2 text-center fh5co-heading">
                         <h2>My Resume</h2>
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-md-12 col-md-offset-0">
+                    <div className="col-md-12 offset-md-0">
                         <ul className="timeline">
                             <li className="timeline-heading text-center animate-box">
                                 <div>

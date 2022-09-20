@@ -3,7 +3,7 @@ const ProjectsSection = () => {
         <div id="fh5co-work" className="fh5co-bg-dark">
             <div className="container">
                 <div className="row animate-box">
-                    <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                    <div className="col-md-8 offset-md-2 text-center fh5co-heading">
                         <h2>Work</h2>
                     </div>
                 </div>

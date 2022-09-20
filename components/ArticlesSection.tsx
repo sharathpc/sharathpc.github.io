@@ -3,7 +3,7 @@ const ArticlesSection = () => {
         <div id="fh5co-blog">
             <div className="container">
                 <div className="row animate-box">
-                    <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                    <div className="col-md-8 offset-md-2 text-center fh5co-heading">
                         <h2>Post on Medium</h2>
                         <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem
                             provident. Odit ab aliquam dolor eius.</p>

@@ -178,7 +178,7 @@ figure {
 					margin-right: -30px;
 				}
 			}
-			/* @media screen and (max-width: $screen-sm) {
+			@include media-breakpoint-down(sm) {
 				font-size: 34px;
 				span {
 					&:before {
@@ -194,7 +194,7 @@ figure {
 						margin-right: -15px;
 					}
 				}
-			} */
+			}
 		}
 		h2 {
 			font-size: 20px;
@@ -203,10 +203,8 @@ figure {
 		}
 		h3 {
 			font-size: 16px;
-			/* @media screen and (max-width: $screen-sm) {
+			@include media-breakpoint-down(sm) {
 				font-size: 14px;
-			} */
-			span {
 			}
 		}
 		.profile-thumb {
@@ -245,9 +243,9 @@ figure {
 	.feature-left {
 		margin-bottom: 40px;
 		float: left;
-		/* @media screen and (max-width: $screen-md) {
+		@include media-breakpoint-down(md) {
 			margin-bottom: 30px;
-		} */
+		}
 		.icon {
 			display: table;
 			text-align: center;
@@ -296,9 +294,9 @@ figure {
 #fh5co-contact {
 	padding: 7em 0;
 	clear: both;
-	/* @media screen and (max-width: $screen-sm) {
+	@include media-breakpoint-down(sm) {
 		padding: 3em 0;
-	} */
+	}
 }
 #fh5co-started {
 	border-bottom: none;
@@ -322,9 +320,9 @@ figure {
 	padding: 0;
 	width: 90%;
 	float: left;
-	/* @media screen and (max-width: $screen-sm) {
+	@include media-breakpoint-down(sm) {
 		margin-bottom: 3em;
-	} */
+	}
 	li {
 		width: 100%;
 		float: left;
@@ -432,17 +430,17 @@ figure {
 		background-color: lighten($brand-black, 90%);
 		left: 50%;
 		margin-left: 0px;
-		/* @media screen and (max-width: $screen-sm) {
+		@include media-breakpoint-down(sm) {
 			margin-left: -64px;
 		}
-		@media screen and (max-width: $screen-xs) {
+		@include media-breakpoint-down(xs) {
 			margin-left: -64px;
-		} */
+		}
 	}
 	.timeline-heading {
-		/* @media screen and (max-width: $screen-sm) {
+		@include media-breakpoint-down(sm) {
 			margin-bottom: 30px;
-		} */
+		}
 		> div {
 			h3 {
 				display: inline-block;
@@ -453,19 +451,19 @@ figure {
 				font-weight: bold;
 				background: lighten($brand-black, 90%);
 				@include border-radius(4px);
-				/* @media screen and (max-width: $screen-sm) {
+				@include media-breakpoint-down(sm) {
 					float: left;
 					margin-bottom: 0;
-				} */
+				}
 			}
 		}
 	}
 	> li {
 		margin-bottom: 20px;
 		position: relative;
-		/* @media screen and (max-width: $screen-sm) {
+		@include media-breakpoint-down(sm) {
 			margin-bottom: 4em;
-		} */
+		}
 		&:before,
 		&:after {
 			content: " ";
@@ -480,10 +478,10 @@ figure {
 			margin-bottom: 0;
 			position: relative;
 			@include border-radius(4px);
-			/* @media screen and (max-width: $screen-sm) {
+			@include media-breakpoint-down(sm) {
 				width: 85% !important;
 			}
-			@media screen and (max-width: $screen-xs) {
+			@include media-breakpoint-down(xs) {
 				width: 75% !important;
 				&:before {
 					top: 30px;
@@ -491,7 +489,7 @@ figure {
 				&:after {
 					top: 31px;
 				}
-			} */
+			}
 		}
 		> .timeline-badge {
 			color: #fff;
@@ -508,12 +506,12 @@ figure {
 			z-index: 100;
 			display: table;
 			@include border-radius(50%);
-			/* @media screen and (max-width: $screen-sm) {
+			@include media-breakpoint-down(sm) {
 				margin-left: -10px !important;
 			}
-			@media screen and (max-width: $screen-md) {
+			@include media-breakpoint-down(md) {
 				margin-left: -10px !important;
-			} */
+			}
 			i {
 				display: table-cell;
 				vertical-align: middle;
@@ -523,9 +521,9 @@ figure {
 		}
 		&.timeline-unverted {
 			text-align: right;
-			/* @media screen and (max-width: $screen-sm) {
+			@include media-breakpoint-down(sm) {
 				text-align: left;
-			} */
+			}
 		}
 		&.timeline-inverted {
 			> .timeline-panel {
@@ -567,7 +565,7 @@ figure {
 	margin-top: 5px;
 }
 
-/* @media (max-width: $screen-md) {
+@include media-breakpoint-down(md) {
 	ul.timeline:before {
 		left: 90px;
 	}
@@ -602,7 +600,7 @@ figure {
 		left: -14px;
 		right: auto;
 	}
-} */
+}
 
 //PROGRESS
 .progress-wrap {
@@ -685,12 +683,12 @@ figure {
 	width: 100%;
 	display: table;
 	overflow: hidden;
-	/* @media screen and (max-width: $screen-sm) {
+	@include media-breakpoint-down(sm) {
 		height: 400px;
 	}
-	@media screen and (max-width: $screen-xs) {
+	@include media-breakpoint-down(xs) {
 		height: 270px;
-	} */
+	}
 	.desc {
 		display: table-cell;
 		vertical-align: middle;
@@ -714,7 +712,7 @@ figure {
 			-webkit-transform: translate3d(0, 15px, 0);
 			transform: translate3d(0, 15px, 0);
 		}
-		/* @media screen and (max-width: $screen-sm) {
+		@include media-breakpoint-down(sm) {
 			opacity: 1;
 			background: rgba($brand-white, 0.6);
 			h3 {
@@ -725,7 +723,7 @@ figure {
 				-webkit-transform: translate3d(0, 0, 0);
 				transform: translate3d(0, 0, 0);
 			}
-		} */
+		}
 	}
 	&:hover {
 		.desc {
@@ -778,9 +776,9 @@ figure {
 	width: 100%;
 	float: left;
 	margin-bottom: 40px;
-	/* @media screen and (max-width: $screen-sm) {
+	@include media-breakpoint-down(sm) {
 		width: 100%;
-	} */
+	}
 	.blog-bg {
 		display: block;
 		width: 100%;
@@ -789,12 +787,12 @@ figure {
 		background-repeat: no-repeat;
 		position: relative;
 		height: 300px;
-		/* @media screen and (max-width: $screen-sm) {
+		@include media-breakpoint-down(sm) {
 			height: 400px;
 		}
-		@media screen and (max-width: $screen-xs) {
+		@include media-breakpoint-down(xs) {
 			height: 270px;
-		} */
+		}
 	}
 	.blog-text {
 		margin-bottom: 30px;
@@ -810,9 +808,9 @@ figure {
 
 		@include transition(0.3s);
 
-		/* @media screen and (max-width: $screen-sm) {
+		@include media-breakpoint-down(sm) {
 			padding: 10px;
-		} */
+		}
 
 		span {
 			display: inline-block;
@@ -829,9 +827,9 @@ figure {
 				list-style: none;
 				display: inline-block;
 				margin-left: 10px;
-				/* @media screen and (max-width: $screen-sm) {
+				@include media-breakpoint-down(sm) {
 					font-size: 14px;
-				} */
+				}
 				&:first-child {
 					margin-left: 0;
 				}
@@ -871,9 +869,9 @@ figure {
 	.video,
 	.choose {
 		display: inline-block;
-		/* @media screen and (max-width: $screen-sm) {
+		@include media-breakpoint-down(sm) {
 			width: 100% !important;
-		} */
+		}
 	}
 	.video {
 		display: table;
@@ -884,24 +882,24 @@ figure {
 		position: relative;
 		@include flex();
 		@include flexwrap();
-		/* @media screen and (max-width: $screen-sm) {
+		@include media-breakpoint-down(sm) {
 			display: none;
-		} */
+		}
 	}
 	.choose {
 		width: 50%;
 		padding: 4em;
-		/* @media screen and (max-width: $screen-sm) {
+		@include media-breakpoint-down(sm) {
 			width: 100%;
 			padding: 4em 1em;
-		} */
+		}
 	}
 }
 .fh5co-video {
 	overflow: hidden;
-	/* @media screen and (max-width: $screen-md) {
+	@include media-breakpoint-down(md) {
 		height: 450px;
-	} */
+	}
 	.overlay {
 		position: absolute;
 		top: 0;

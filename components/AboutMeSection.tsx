@@ -3,7 +3,7 @@ const AboutMeSection = () => {
         <div id="fh5co-about" className="animate-box">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                    <div className="col-md-8 offset-md-2 text-center fh5co-heading">
                         <h2>About Me</h2>
                     </div>
                 </div>
