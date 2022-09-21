@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import { Fade } from "react-awesome-reveal";
 
 const ExperienceSection = () => {
     const data = {
@@ -39,28 +40,33 @@ const ExperienceSection = () => {
                         <ul className="timeline">
                             {data.subSections.map((subSection, subIndex) =>
                                 <React.Fragment key={subIndex}>
-                                    <div className="timeline-heading text-center animate-box">
-                                        <div>
-                                            <h3>{subSection.heading}</h3>
+                                    <Fade cascade damping={0.1} direction="up" triggerOnce>
+                                        <div className="timeline-heading text-center">
+                                            <div>
+                                                <h3>{subSection.heading}</h3>
+                                            </div>
                                         </div>
-                                    </div>
-                                    {subSection.list.map((item, itemIndex) =>
-                                        <li className="animate-box timeline-item"
-                                            key={`${subIndex}-${itemIndex}`}>
-                                            <div className="timeline-badge">
-                                                <i className={subSection.iconClassName}></i>
-                                            </div>
-                                            <div className="timeline-panel">
-                                                <div className="timeline-heading">
-                                                    <h3 className="timeline-title">{item.mainText}</h3>
-                                                    <span className="company">{item.subText}</span>
+                                    </Fade>
+
+                                    <Fade cascade damping={0.1} direction="up" triggerOnce>
+                                        {subSection.list.map((item, itemIndex) =>
+                                            <li className="timeline-item"
+                                                key={`${subIndex}-${itemIndex}`}>
+                                                <div className="timeline-badge">
+                                                    <i className={subSection.iconClassName}></i>
                                                 </div>
-                                                <div className="timeline-body">
-                                                    <p>{item.description}</p>
+                                                <div className="timeline-panel">
+                                                    <div className="timeline-heading">
+                                                        <h3 className="timeline-title">{item.mainText}</h3>
+                                                        <span className="company">{item.subText}</span>
+                                                    </div>
+                                                    <div className="timeline-body">
+                                                        <p>{item.description}</p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </li>
-                                    )}
+                                            </li>
+                                        )}
+                                    </Fade>
                                 </React.Fragment>
                             )}
                         </ul>

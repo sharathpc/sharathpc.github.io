@@ -1,3 +1,5 @@
+import { Fade } from "react-awesome-reveal";
+
 const HeaderSection = () => {
     const data = {
         bannerUrl: 'https://ik.imagekit.io/sharathpc/protfolio/github/banner_IHMyYVIEg.gif',
@@ -31,22 +33,24 @@ const HeaderSection = () => {
                 <div className="row">
                     <div className="col-md-8 offset-md-2 text-center">
                         <div className="display-t js-fullheight">
-                            <div className="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-                                <div className="profile-thumb" style={{ background: `url(${data.profileImgUrl})` }}></div>
-                                <h1><span>{data.fullName}</span></h1>
-                                <h3><span>{data.skills}</span></h3>
-                                <br />
-                                <div>
-                                    <ul className="fh5co-social-icons">
-                                        {data.socialList.map((social, sIndex) =>
-                                            <li key={sIndex} title={social.title}>
-                                                <a href={social.href}>
-                                                    <i className={social.className}></i>
-                                                </a>
-                                            </li>
-                                        )}
-                                    </ul>
-                                </div>
+                            <div className="display-tc js-fullheight">
+                                <Fade cascade damping={0.1} direction="up" triggerOnce>
+                                    <div className="profile-thumb" style={{ background: `url(${data.profileImgUrl})` }}></div>
+                                    <h1><span>{data.fullName}</span></h1>
+                                    <h3><span>{data.skills}</span></h3>
+                                    <br />
+                                    <div>
+                                        <ul className="fh5co-social-icons">
+                                            {data.socialList.map((social, sIndex) =>
+                                                <li key={sIndex} title={social.title}>
+                                                    <a href={social.href}>
+                                                        <i className={social.className}></i>
+                                                    </a>
+                                                </li>
+                                            )}
+                                        </ul>
+                                    </div>
+                                </Fade>
                             </div>
                         </div>
                     </div>

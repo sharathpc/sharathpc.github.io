@@ -1,3 +1,5 @@
+import { Fade } from "react-awesome-reveal";
+
 const ServicesSection = () => {
     const data = {
         sectionHeading: 'My Services',
@@ -26,9 +28,9 @@ const ServicesSection = () => {
                         </div>
                     </div>
                     <div className="row">
-                        {data.list.map((item, itemIndex) =>
-                            <div className="col-md-4 text-center" key={itemIndex}>
-                                <div className="feature-left">
+                        <Fade className="col-md-4 text-center" cascade damping={0.1} direction="up" triggerOnce>
+                            {data.list.map((item, itemIndex) =>
+                                <div className="feature-left" key={itemIndex}>
                                     <span className="icon">
                                         <i className={item.iconClassName}></i>
                                     </span>
@@ -37,8 +39,8 @@ const ServicesSection = () => {
                                         <p>{item.subText}</p>
                                     </div>
                                 </div>
-                            </div>
-                        )}
+                            )}
+                        </Fade>
                     </div>
                 </div>
             </div>

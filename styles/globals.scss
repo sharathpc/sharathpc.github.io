@@ -1,4 +1,5 @@
 @import "./variables.scss";
+@import "./icomoon.scss";
 @import "bootstrap/scss/bootstrap.scss";
 
 /* =======================================================
@@ -302,9 +303,6 @@ figure {
 	border-bottom: none;
 }
 
-.fh5co-bg-color {
-	// background: #233142;
-}
 .fh5co-bg-dark {
 	background: $brand-bg-dark;
 	background: $brand-primary;
@@ -332,14 +330,13 @@ figure {
 			padding-top: 0;
 		}
 		.first-block {
-			width: 40%;
+			width: 120px;
 			display: inline-block;
-			float: left;
 			color: $brand-black;
 			font-weight: bold;
 		}
 		.second-block {
-			width: 60%;
+			width: calc(100% - 120px);
 			display: inline-block;
 			color: rgba($brand-black, 0.5);
 		}
@@ -1187,10 +1184,4 @@ input[type="text"] {
 	height: 100%;
 	z-index: 9999;
 	background: url(../public/images/loader.gif) center no-repeat #fff;
-}
-
-.animate-box {
-	.js & {
-		opacity: 0;
-	}
 }

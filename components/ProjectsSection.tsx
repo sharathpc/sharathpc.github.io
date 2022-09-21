@@ -1,4 +1,18 @@
 const ProjectsSection = () => {
+    const data = {
+        sectionHeading: 'My Skills',
+        list: [{
+            iconClassName: 'icon-paintbrush',
+            label: 'HTML5'
+        }, {
+            iconClassName: 'icon-genius',
+            label: 'CSS3'
+        }, {
+            iconClassName: 'icon-mobile',
+            label: 'jQuery'
+        }]
+    }
+
     return (
         <div id="fh5co-work" className="fh5co-bg-dark">
             <div className="container">

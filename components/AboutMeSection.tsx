@@ -1,3 +1,5 @@
+import { Fade } from "react-awesome-reveal";
+
 const AboutMeSection = () => {
     const data = {
         sectionHeading: 'About Me',
@@ -19,7 +21,7 @@ const AboutMeSection = () => {
     }
 
     return (
-        <div id="fh5co-about" className="animate-box">
+        <div id="fh5co-about" >
             <div className="container">
                 <div className="row">
                     <div className="col-md-8 offset-md-2 text-center fh5co-heading">
@@ -27,7 +29,7 @@ const AboutMeSection = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-md-4">
+                    <Fade className="col-md-6" cascade damping={0.1} direction="up" triggerOnce>
                         <ul className="info">
                             {data.fieldsList.map((field, fIndex) =>
                                 <li key={fIndex}>
@@ -36,8 +38,8 @@ const AboutMeSection = () => {
                                 </li>
                             )}
                         </ul>
-                    </div>
-                    <div className="col-md-8">
+                    </Fade>
+                    <div className="col-md-6">
                         <h2>{data.helloText}</h2>
                         {data.descriptionBlocks.map((desc, dIndex) => <p key={dIndex}>{desc}</p>)}
                     </div>
