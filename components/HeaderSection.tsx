@@ -5,23 +5,23 @@ const HeaderSection = () => {
         bannerUrl: 'https://ik.imagekit.io/sharathpc/protfolio/github/banner_IHMyYVIEg.gif',
         profileImgUrl: 'images/profile-pic.jpg',
         fullName: 'Sharath Chandra',
-        skills: 'Web Developer / Photographer',
+        skills: 'Web Developer / App Developer',
         socialList: [{
             title: 'GitHub',
             className: 'icon-github2',
-            href: 'https://www.google.com'
+            href: 'https://github.com/sharathpc'
         }, {
             title: 'Linkedin',
             className: 'icon-linkedin2',
-            href: 'https://www.google.com'
+            href: 'https://www.linkedin.com/in/sharathpc'
         }, {
             title: 'Medium',
             className: 'icon-blogger',
-            href: 'https://www.google.com'
+            href: 'https://sharathpc.medium.com'
         }, {
             title: 'Twitter',
             className: 'icon-twitter2',
-            href: 'https://www.google.com'
+            href: 'https://twitter.com/sharath0033'
         }]
     }
 

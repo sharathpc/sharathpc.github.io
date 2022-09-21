@@ -6,15 +6,15 @@ const ServicesSection = () => {
         list: [{
             iconClassName: 'icon-paintbrush',
             mainText: 'Web Design',
-            subText: 'Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.'
+            subText: 'Creating pixel perfect renders from designs using HTML5 and CSS3'
         }, {
             iconClassName: 'icon-genius',
             mainText: 'Web Development',
-            subText: 'Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.'
+            subText: 'Creating highly functional optimized code applications using JavaScript/React/Angular'
         }, {
             iconClassName: 'icon-mobile',
             mainText: 'Mobile Development',
-            subText: 'Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.'
+            subText: 'Building native feel mobile applications for IOS/Android using Flutter'
         }]
     }
 

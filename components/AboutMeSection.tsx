@@ -5,8 +5,8 @@ const AboutMeSection = () => {
         sectionHeading: 'About Me',
         helloText: 'Hello There!',
         descriptionBlocks: [
-            'There live the blind texts far from the countries Vokalia and Consonantia, there live the blind texts.Separated they live in bookmarksgrove there live the blind texts far from the countries.',
-            'Far far away, behind the word mountains, Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci there live the blind texts from the countries Vokalia and Consonantia, there live the blind texts. Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.'
+            'Creative and highly motivated full stack developer with 6+ years of experience in website design, development, and deployment process.',
+            'Ability to produce optimised solutions, clean concise code by hand and pixel perfect renders from designs. Proficient in building web and mobile applications.'
         ],
         fieldsList: [{
             label: 'First Name',
@@ -17,6 +17,12 @@ const AboutMeSection = () => {
         }, {
             label: 'Email',
             value: 'sharathchandra0033@gmail.com',
+        }, {
+            label: 'Country',
+            value: 'India',
+        }, {
+            label: 'Languages',
+            value: 'English, Hindi and Telugu',
         }]
     }
 

@@ -20,11 +20,10 @@ const Home: NextPage = () => {
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Profile &mdash; Free Website Template, Free HTML5 Template by freehtml5.co</title>
-        <meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
-        <meta name="keywords"
-          content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-        <meta name="author" content="freehtml5.co" />
+        <title>sharathpc Portfolio</title>
+        <meta name="description" content="Sharath Chandra portfolio with resume and contact details" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="sharathpc" />
         <meta property="og:title" content="" />
         <meta property="og:image" content="" />
         <meta property="og:url" content="" />
@@ -35,17 +34,16 @@ const Home: NextPage = () => {
         <meta name="twitter:url" content="" />
         <meta name="twitter:card" content="" />
       </Head>
-      {/* <div className="fh5co-loader"></div> */}
       <div id="page">
         <HeaderSection />
         <AboutMeSection />
         <ExperienceSection />
         <ServicesSection />
-        <SkillsSection />
+        {/* <SkillsSection />
         <ProjectsSection />
         <ArticlesSection />
         <ContactMeSection />
-        <FooterSection />
+        <FooterSection /> */}
         <ScrollToTop smooth component={
           <a className="js-gotop">
             <i className="icon-arrow-up22"></i>

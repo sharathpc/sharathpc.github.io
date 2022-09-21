@@ -8,21 +8,33 @@ const ExperienceSection = () => {
             heading: 'Work Experience',
             iconClassName: 'icon-suitcase',
             list: [{
-                mainText: 'Senior Developer',
-                subText: 'Company Name - 2016 - Current',
-                description: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.'
+                mainText: 'Staff Software Engineer',
+                subText: 'Biva Analytics - Apr 2022 - Current',
+                description: 'Biva formerly known as halo is an e-commerce business assistant. It facilitates a holistic view of the business functions by providing essential reports and insights across all facets making it a one-stop destination for all business teams.'
             }, {
-                mainText: 'Senior Developer',
-                subText: 'Company Name - 2016 - Current',
-                description: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.'
+                mainText: 'Senior Software Engineer',
+                subText: 'Saras Analytics - Jun 2020 - Mar 2022',
+                description: 'Biva formerly known as halo is an e-commerce business assistant. It facilitates a holistic view of the business functions by providing essential reports and insights across all facets making it a one-stop destination for all business teams.'
+            }, {
+                mainText: 'Development Engineer',
+                subText: 'Pramati Technologies - Nov 2019 - May 2020',
+                description: 'WaveMaker is an Open #LowCode Development platform to quickly build enterprise-grade multi-device applications that can be easily extended or customised.'
+            }, {
+                mainText: 'Software Engineer',
+                subText: 'Tripod Technologies - July 2016 - Nov 2019',
+                description: 'eureQa is the Digital Assurance Platform, purpose built for testing digital applications. eureQa provides end-to-end testing for applications with customizable workflows, content and data.'
             }]
         }, {
             heading: 'Education',
             iconClassName: 'icon-graduation-cap',
             list: [{
-                mainText: 'Masters Degree',
-                subText: 'University Name - 2007 - 2009',
-                description: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.'
+                mainText: 'Bachelors Degree',
+                subText: 'JNTUH (CSE) - July 2012 - May 2016',
+                description: null
+            }, {
+                mainText: 'High School',
+                subText: 'NJC (MPC) - June 2010 - May 2012',
+                description: null
             }]
         }]
     }
@@ -60,9 +72,9 @@ const ExperienceSection = () => {
                                                         <h3 className="timeline-title">{item.mainText}</h3>
                                                         <span className="company">{item.subText}</span>
                                                     </div>
-                                                    <div className="timeline-body">
+                                                    {item.description && <div className="timeline-body">
                                                         <p>{item.description}</p>
-                                                    </div>
+                                                    </div>}
                                                 </div>
                                             </li>
                                         )}
