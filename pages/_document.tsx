@@ -7,8 +7,8 @@ class Document extends NextDocument<Props> {
         return (
             <Html>
                 <Head>
-                    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet" />
-                    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" />
+                    <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet" />
+                    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet" />
                 </Head>
                 <body>
                     <Main />
