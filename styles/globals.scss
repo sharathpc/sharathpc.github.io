@@ -204,6 +204,10 @@ figure {
 		}
 		h3 {
 			font-size: 16px;
+			.service-name {
+				font-size: 24px;
+				font-weight: bold;
+			}
 			@include media-breakpoint-down(sm) {
 				font-size: 14px;
 			}

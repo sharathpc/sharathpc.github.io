@@ -1,11 +1,20 @@
+import { useRef } from "react";
 import { Fade } from "react-awesome-reveal";
+import Typed from "typed.js";
 
 const HeaderSection = () => {
+    const typedElement: any = useRef(null);
+    const typedInstance: any = useRef(null);
+
     const data = {
         bannerUrl: 'https://ik.imagekit.io/sharathpc/protfolio/github/banner_IHMyYVIEg.gif',
         profileImgUrl: 'images/profile-pic.jpg',
         fullName: 'Sharath Chandra',
-        skills: 'Web Developer / App Developer',
+        skills: [
+            `I'm a <span class="service-name">Web Developer</span>`,
+            `I'm a <span class="service-name">App Developer</span>`,
+            `I'm a <span class="service-name">FullStack Developer</span>`,
+        ],
         socialList: [{
             title: 'GitHub',
             className: 'icon-github2',
@@ -25,6 +34,16 @@ const HeaderSection = () => {
         }]
     }
 
+    const startTypedAnimation = () => {
+        if (!typedInstance.current) {
+            typedInstance.current = new Typed(typedElement.current, {
+                strings: data.skills,
+                typeSpeed: 100,
+                backSpeed: 50,
+            });
+        }
+    }
+
     return (
         <header id="fh5co-header" className="fh5co-cover js-fullheight" role="banner"
             style={{ backgroundImage: `url(${data.bannerUrl})` }}>
@@ -34,10 +53,10 @@ const HeaderSection = () => {
                     <div className="col-md-8 offset-md-2 text-center">
                         <div className="display-t js-fullheight">
                             <div className="display-tc js-fullheight">
-                                <Fade cascade damping={0.1} direction="up" triggerOnce>
+                                <Fade cascade damping={0.1} direction="up" triggerOnce onVisibilityChange={startTypedAnimation}>
                                     <div className="profile-thumb" style={{ background: `url(${data.profileImgUrl})` }}></div>
                                     <h1><span>{data.fullName}</span></h1>
-                                    <h3><span>{data.skills}</span></h3>
+                                    <h3><span ref={typedElement}></span></h3>
                                     <br />
                                     <div>
                                         <ul className="fh5co-social-icons">
