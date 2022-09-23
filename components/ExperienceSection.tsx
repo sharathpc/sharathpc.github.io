@@ -52,11 +52,9 @@ const ExperienceSection = () => {
                         <ul className="timeline">
                             {data.subSections.map((subSection, subIndex) =>
                                 <React.Fragment key={subIndex}>
-                                    <Fade cascade damping={0.1} direction="up" triggerOnce>
-                                        <div className="timeline-heading text-center">
-                                            <div>
-                                                <h3>{subSection.heading}</h3>
-                                            </div>
+                                    <Fade className="timeline-heading text-center" cascade damping={0.1} direction="up" triggerOnce>
+                                        <div>
+                                            <h3>{subSection.heading}</h3>
                                         </div>
                                     </Fade>
 
