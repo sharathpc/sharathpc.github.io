@@ -39,8 +39,8 @@ const Home: NextPage = () => {
         <AboutMeSection />
         <ExperienceSection />
         <ServicesSection />
-        {/* <SkillsSection />
-        <ProjectsSection />
+        <SkillsSection />
+        {/* <ProjectsSection />
         <ArticlesSection />
         <ContactMeSection />
         <FooterSection /> */}

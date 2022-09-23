@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import { Fade } from "react-awesome-reveal";
-import Typed from "typed.js";
+import { Fade } from "react-awesome-reveal"
+import Typed from "typed.js"
 
 const HeaderSection = () => {
     const typedElement: any = useRef(null);

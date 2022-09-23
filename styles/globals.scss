@@ -611,74 +611,34 @@ figure {
 	}
 }
 
-//PROGRESS
-.progress-wrap {
-	width: 100%;
-	float: left;
-	margin-bottom: 10px;
-	h3 {
-		font-size: 16px;
-		display: block;
-		margin-bottom: 10px;
-		float: left;
-		width: 100%;
-		.name-left {
-			float: left;
-		}
-		.value-right {
-			float: right;
-		}
-	}
-}
-.progress {
-	width: 100%;
-	float: left;
-	height: 5px;
-	box-shadow: none;
-}
-.progress-bar {
-	background-color: $brand-bg-dark;
-	height: 5px;
-	display: block;
-	box-shadow: none;
-	&.progress-bar-1 {
-		background-color: #2980b9 !important;
-	}
-	&.progress-bar-2 {
-		background-color: #c0392b !important;
-	}
-	&.progress-bar-3 {
-		background-color: #d35400 !important;
-	}
-	&.progress-bar-4 {
-		background-color: #8e44ad !important;
-	}
-	&.progress-bar-5 {
-		background-color: #27ae60 !important;
-	}
-}
-
-// CHART
-.chart {
-	width: 160px;
-	height: 160px;
-	margin: 0 auto 40px auto;
+//Skills
+.skills-container {
 	position: relative;
-	text-align: center;
-	span {
-		strong {
-			display: block;
-		}
+	padding: 30px 10px 10px 10px;
+	border: 1px solid lighten($brand-black, 90%);
+	border-radius: 4px;
+	.skill-group-heading {
 		position: absolute;
-		top: 50%;
-		left: 0;
-		margin-top: -30px;
-		width: 100%;
+		top: -20px;
+		left: 20px;
+		padding: 7px 15px;
+		font-size: 18px;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		font-weight: bold;
+		background: lighten($brand-black, 90%);
+		border-radius: 4px;
+		margin: 0;
 	}
-	canvas {
-		position: absolute;
-		left: 0;
-		top: 0;
+	.skills-group {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
+		grid-template-rows: min-content;
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
+		.skill-logo {
+			width: 100%;
+		}
 	}
 }
 
