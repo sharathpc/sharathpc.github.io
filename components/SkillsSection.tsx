@@ -1,4 +1,5 @@
 import { Fade } from "react-awesome-reveal";
+import Image from 'next/image'
 
 const SkillsSection = () => {
     const data = {
@@ -200,8 +201,8 @@ const SkillsSection = () => {
                         <div className=" skills-group">
                             <Fade cascade damping={0.05} triggerOnce>
                                 {data.frontend.map((item, itemIndex) =>
-                                    <a href={item.link} target="_blank" title={item.label} key={itemIndex}>
-                                        <img className="skill-logo" src={item.imgUrl} alt={item.label} />
+                                    <a href={item.link} target="_blank" rel="noreferrer" title={item.label} key={itemIndex}>
+                                        <Image className="skill-logo" src={item.imgUrl} alt={item.label} />
                                     </a>
                                 )}
                             </Fade>
@@ -214,8 +215,8 @@ const SkillsSection = () => {
                         <div className="skills-group">
                             <Fade cascade damping={0.05} triggerOnce>
                                 {data.backend.map((item, itemIndex) =>
-                                    <a href={item.link} target="_blank" title={item.label} key={itemIndex}>
-                                        <img className="skill-logo" src={item.imgUrl} alt={item.label} />
+                                    <a href={item.link} target="_blank" rel="noreferrer" title={item.label} key={itemIndex}>
+                                        <Image className="skill-logo" src={item.imgUrl} alt={item.label} />
                                     </a>
                                 )}
                             </Fade>
@@ -226,8 +227,8 @@ const SkillsSection = () => {
                         <div className="skills-group">
                             <Fade cascade damping={0.05} triggerOnce>
                                 {data.database.map((item, itemIndex) =>
-                                    <a href={item.link} target="_blank" title={item.label} key={itemIndex}>
-                                        <img className="skill-logo" src={item.imgUrl} alt={item.label} />
+                                    <a href={item.link} target="_blank" rel="noreferrer" title={item.label} key={itemIndex}>
+                                        <Image className="skill-logo" src={item.imgUrl} alt={item.label} />
                                     </a>
                                 )}
                             </Fade>
@@ -238,8 +239,8 @@ const SkillsSection = () => {
                         <div className="skills-group">
                             <Fade cascade damping={0.05} triggerOnce>
                                 {data.devops.map((item, itemIndex) =>
-                                    <a href={item.link} target="_blank" title={item.label} key={itemIndex}>
-                                        <img className="skill-logo" src={item.imgUrl} alt={item.label} />
+                                    <a href={item.link} target="_blank" rel="noreferrer" title={item.label} key={itemIndex}>
+                                        <Image className="skill-logo" src={item.imgUrl} alt={item.label} />
                                     </a>
                                 )}
                             </Fade>

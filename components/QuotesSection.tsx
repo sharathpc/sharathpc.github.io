@@ -309,7 +309,7 @@ const QuotesSection = () => {
 
     useEffect(() => {
         setRandomNumber(Math.floor(Math.random() * data.quotes.length));
-    }, []);
+    }, [data.quotes.length]);
 
     return (
         <div id="quotes-section" className="global-bg-dark">
