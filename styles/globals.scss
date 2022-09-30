@@ -48,15 +48,15 @@ body {
 		background-color: transparent;
 		@include transition(0.5s);
 		a {
-			width: 50px;
-			height: 50px;
+			width: 40px;
+			height: 40px;
 			display: table;
 			background: rgba(0, 0, 0, 0.9);
 			color: $brand-white;
 			text-align: center;
 			@include border-radius(50%);
 			i {
-				height: 50px;
+				height: 40px;
 				display: table-cell;
 				vertical-align: middle;
 			}
@@ -615,7 +615,7 @@ figure {
 //Skills
 #fh5co-skills {
 	.row:last-child {
-		.skills-container {
+		.skills-container:not(:last-child) {
 			@include media-breakpoint-down(sm) {
 				margin-bottom: 50px;
 			}
@@ -641,10 +641,11 @@ figure {
 		}
 		.skills-group {
 			display: grid;
-			grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
+			grid-template-columns: repeat(auto-fill, minmax(65px, 0fr));
 			grid-template-rows: min-content;
 			grid-column-gap: 20px;
 			grid-row-gap: 20px;
+			align-items: center;
 			.skill-logo {
 				width: 100%;
 			}

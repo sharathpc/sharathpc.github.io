@@ -44,7 +44,7 @@ const Home: NextPage = () => {
         <ArticlesSection />
         <ContactMeSection />
         <FooterSection /> */}
-        <ScrollToTop smooth component={
+        <ScrollToTop top={500} smooth component={
           <a className="js-gotop">
             <i className="icon-arrow-up22"></i>
           </a>
