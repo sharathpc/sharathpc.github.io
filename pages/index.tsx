@@ -4,11 +4,11 @@ import ScrollToTop from 'react-scroll-to-top'
 
 import AboutMeSection from '../components/AboutMeSection'
 import ArticlesSection from '../components/ArticlesSection'
-import ContactMeSection from '../components/ContactMeSection'
 import ExperienceSection from '../components/ExperienceSection'
 import FooterSection from '../components/FooterSection'
 import HeaderSection from '../components/HeaderSection'
 import ProjectsSection from '../components/ProjectsSection'
+import QuotesSection from '../components/QuotesSection'
 import ServicesSection from '../components/ServicesSection'
 import SkillsSection from '../components/SkillsSection'
 
@@ -41,9 +41,9 @@ const Home: NextPage = () => {
         <ServicesSection />
         <SkillsSection />
         {/* <ProjectsSection />
-        <ArticlesSection />
-        <ContactMeSection />
-        <FooterSection /> */}
+        <ArticlesSection /> */}
+        <QuotesSection />
+        <FooterSection />
         <ScrollToTop top={500} smooth component={
           <a className="js-gotop">
             <i className="icon-arrow-up22"></i>

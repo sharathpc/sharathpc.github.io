@@ -27,10 +27,10 @@ const AboutMeSection = () => {
     }
 
     return (
-        <div id="fh5co-about" >
+        <div id="about-section">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-8 offset-md-2 text-center fh5co-heading">
+                    <div className="col-md-8 offset-md-2 text-center heading">
                         <h2>{data.sectionHeading}</h2>
                     </div>
                 </div>

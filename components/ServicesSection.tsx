@@ -19,11 +19,11 @@ const ServicesSection = () => {
     }
 
     return (
-        <div id="fh5co-features" className="animate-box">
+        <div id="services-section" className="animate-box global-bg-dark">
             <div className="container">
                 <div className="services-padding">
                     <div className="row">
-                        <div className="col-md-8 offset-md-2 text-center fh5co-heading">
+                        <div className="col-md-8 offset-md-2 text-center heading">
                             <h2>{data.sectionHeading}</h2>
                         </div>
                     </div>

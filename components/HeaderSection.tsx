@@ -8,7 +8,7 @@ const HeaderSection = () => {
 
     const data = {
         bannerUrl: 'https://ik.imagekit.io/sharathpc/protfolio/github/banner_IHMyYVIEg.gif',
-        profileImgUrl: 'images/profile-pic.jpg',
+        profileImgUrl: 'https://ik.imagekit.io/sharathpc/protfolio/profile-pic_rzn51RRjj.jpg',
         fullName: 'Sharath Chandra',
         skills: [
             `I'm a <span class="service-name">Web Developer</span>`,
@@ -45,7 +45,7 @@ const HeaderSection = () => {
     }
 
     return (
-        <header id="fh5co-header" className="fh5co-cover js-fullheight" role="banner"
+        <header id="header-section" className="js-fullheight" role="banner"
             style={{ backgroundImage: `url(${data.bannerUrl})` }}>
             <div className="overlay"></div>
             <div className="container">
@@ -59,7 +59,7 @@ const HeaderSection = () => {
                                     <h3><span ref={typedElement}></span></h3>
                                     <br />
                                     <div>
-                                        <ul className="fh5co-social-icons">
+                                        <ul className="social-icons">
                                             {data.socialList.map((social, sIndex) =>
                                                 <li key={sIndex} title={social.title}>
                                                     <a href={social.href}>

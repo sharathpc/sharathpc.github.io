@@ -1,9 +1,9 @@
 const ArticlesSection = () => {
     return (
-        <div id="fh5co-blog">
+        <div id="blogs-section">
             <div className="container">
                 <div className="row animate-box">
-                    <div className="col-md-8 offset-md-2 text-center fh5co-heading">
+                    <div className="col-md-8 offset-md-2 text-center heading">
                         <h2>Post on Medium</h2>
                         <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem
                             provident. Odit ab aliquam dolor eius.</p>
@@ -11,7 +11,7 @@ const ArticlesSection = () => {
                 </div>
                 <div className="row">
                     <div className="col-md-4">
-                        <div className="fh5co-blog animate-box">
+                        <div className="blog-item animate-box">
                             <a href="#" className="blog-bg" style={{ backgroundImage: 'url(images/portfolio-1.jpg)' }}></a>
                             <div className="blog-text">
                                 <span className="posted_on">Mar. 15th 2016</span>
@@ -27,7 +27,7 @@ const ArticlesSection = () => {
                         </div>
                     </div>
                     <div className="col-md-4">
-                        <div className="fh5co-blog animate-box">
+                        <div className="blog-item animate-box">
                             <a href="#" className="blog-bg" style={{ backgroundImage: 'url(images/portfolio-2.jpg)' }}></a>
                             <div className="blog-text">
                                 <span className="posted_on">Mar. 15th 2016</span>
@@ -43,7 +43,7 @@ const ArticlesSection = () => {
                         </div>
                     </div>
                     <div className="col-md-4">
-                        <div className="fh5co-blog animate-box">
+                        <div className="blog-item animate-box">
                             <a href="#" className="blog-bg" style={{ backgroundImage: 'url(images/portfolio-3.jpg)' }}></a>
                             <div className="blog-text">
                                 <span className="posted_on">Mar. 15th 2016</span>
