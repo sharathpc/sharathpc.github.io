@@ -4,7 +4,7 @@ const FooterSection = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
-                        <p>&copy; 2022 Sharath Chandra Pyarasani. All Rights Reserved.</p>
+                        <p>Copyright &copy; 2022 All Rights Reserved.</p>
                     </div>
                 </div>
             </div>
