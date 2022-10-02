@@ -2,7 +2,7 @@ import { Fade } from "react-awesome-reveal"
 
 const ServicesSection = () => {
     const data = {
-        sectionHeading: 'My Services',
+        sectionHeading: 'Services',
         list: [{
             iconClassName: 'icon-paintbrush',
             mainText: 'Web Design',
@@ -19,7 +19,7 @@ const ServicesSection = () => {
     }
 
     return (
-        <div id="services-section" className="animate-box global-bg-dark">
+        <div id="services-section" className="global-bg-dark">
             <div className="container">
                 <div className="services-padding">
                     <div className="row">

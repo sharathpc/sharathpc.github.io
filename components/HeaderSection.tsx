@@ -62,7 +62,7 @@ const HeaderSection = () => {
                                         <ul className="social-icons">
                                             {data.socialList.map((social, sIndex) =>
                                                 <li key={sIndex} title={social.title}>
-                                                    <a href={social.href}>
+                                                    <a href={social.href} target="_blank">
                                                         <i className={social.className}></i>
                                                     </a>
                                                 </li>

@@ -1,6 +1,6 @@
 const FooterSection = () => {
     return (
-        <div id="footer-section">
+        <div id="footer-section" className="global-bg-dark">
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">

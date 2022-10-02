@@ -289,38 +289,17 @@ const QuotesSection = () => {
         }]
     }
 
-    /* const downloadResumeHandler = () => {
-        fetch('https://ik.imagekit.io/sharathpc/protfolio/github/banner_IHMyYVIEg.gif', {
-            method: 'get',
-            mode: 'no-cors',
-            referrerPolicy: 'no-referrer'
-        })
-            .then(res => res.blob())
-            .then(res => {
-                const aElement = document.createElement('a');
-                aElement.setAttribute('download', 'testing');
-                const href = URL.createObjectURL(res);
-                aElement.href = href;
-                aElement.setAttribute('target', '_blank');
-                aElement.click();
-                URL.revokeObjectURL(href);
-            });
-    } */
-
     useEffect(() => {
         setRandomNumber(Math.floor(Math.random() * data.quotes.length));
     }, [data.quotes.length]);
 
     return (
-        <div id="quotes-section" className="global-bg-dark">
+        <div id="quotes-section" className="global-bg-dark pb-0">
             <div className="container">
-                <div className="row animate-box">
+                <div className="row">
                     <div className="col-md-8 offset-md-2 text-center heading">
                         <h2>{data.sectionHeading}</h2>
                         <p>{data.quotes[randomNumber].quote} <span className="author-name">- {data.quotes[randomNumber].author}</span></p>
-                        {/* <p>
-                            <a className="btn btn-default btn-lg" onClick={downloadResumeHandler}>Download Resume</a>
-                        </p> */}
                     </div>
                 </div>
             </div>

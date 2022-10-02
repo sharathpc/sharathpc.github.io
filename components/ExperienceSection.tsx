@@ -3,9 +3,9 @@ import { Fade } from "react-awesome-reveal"
 
 const ExperienceSection = () => {
     const data = {
-        sectionHeading: 'My Resume',
+        sectionHeading: 'Experience',
         subSections: [{
-            heading: 'Work Experience',
+            heading: 'Work',
             iconClassName: 'icon-suitcase',
             list: [{
                 mainText: 'Staff Software Engineer',
@@ -42,7 +42,7 @@ const ExperienceSection = () => {
     return (
         <div id="experience-section" className="bg-color">
             <div className="container">
-                <div className="row animate-box">
+                <div className="row">
                     <div className="col-md-8 offset-md-2 text-center heading">
                         <h2>{data.sectionHeading}</h2>
                     </div>

@@ -1,6 +1,6 @@
 const ProjectsSection = () => {
     const data = {
-        sectionHeading: 'My Skills',
+        sectionHeading: 'Projects',
         list: [{
             iconClassName: 'icon-paintbrush',
             label: 'HTML5'
@@ -16,13 +16,13 @@ const ProjectsSection = () => {
     return (
         <div id="work-section" className="global-bg-dark">
             <div className="container">
-                <div className="row animate-box">
+                <div className="row">
                     <div className="col-md-8 offset-md-2 text-center heading">
-                        <h2>Projects</h2>
+                        <h2>{data.sectionHeading}</h2>
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-md-3 text-center col-padding animate-box">
+                    <div className="col-md-3 text-center col-padding">
                         <a href="#" className="work-item" style={{ backgroundImage: 'url(images/portfolio-1.jpg)' }}>
                             <div className="desc">
                                 <h3>Project Name</h3>
@@ -30,7 +30,7 @@ const ProjectsSection = () => {
                             </div>
                         </a>
                     </div>
-                    <div className="col-md-3 text-center col-padding animate-box">
+                    <div className="col-md-3 text-center col-padding">
                         <a href="#" className="work-item" style={{ backgroundImage: 'url(images/portfolio-2.jpg)' }}>
                             <div className="desc">
                                 <h3>Project Name</h3>
@@ -38,7 +38,7 @@ const ProjectsSection = () => {
                             </div>
                         </a>
                     </div>
-                    <div className="col-md-3 text-center col-padding animate-box">
+                    <div className="col-md-3 text-center col-padding">
                         <a href="#" className="work-item" style={{ backgroundImage: 'url(images/portfolio-3.jpg)' }}>
                             <div className="desc">
                                 <h3>Project Name</h3>
@@ -46,7 +46,7 @@ const ProjectsSection = () => {
                             </div>
                         </a>
                     </div>
-                    <div className="col-md-3 text-center col-padding animate-box">
+                    <div className="col-md-3 text-center col-padding">
                         <a href="#" className="work-item" style={{ backgroundImage: 'url(images/portfolio-4.jpg)' }}>
                             <div className="desc">
                                 <h3>Project Name</h3>
@@ -54,7 +54,7 @@ const ProjectsSection = () => {
                             </div>
                         </a>
                     </div>
-                    <div className="col-md-3 text-center col-padding animate-box">
+                    <div className="col-md-3 text-center col-padding">
                         <a href="#" className="work-item" style={{ backgroundImage: 'url(images/portfolio-5.jpg)' }}>
                             <div className="desc">
                                 <h3>Project Name</h3>
@@ -62,7 +62,7 @@ const ProjectsSection = () => {
                             </div>
                         </a>
                     </div>
-                    <div className="col-md-3 text-center col-padding animate-box">
+                    <div className="col-md-3 text-center col-padding">
                         <a href="#" className="work-item" style={{ backgroundImage: 'url(images/portfolio-6.jpg)' }}>
                             <div className="desc">
                                 <h3>Project Name</h3>
@@ -70,7 +70,7 @@ const ProjectsSection = () => {
                             </div>
                         </a>
                     </div>
-                    <div className="col-md-3 text-center col-padding animate-box">
+                    <div className="col-md-3 text-center col-padding">
                         <a href="#" className="work-item" style={{ backgroundImage: 'url(images/portfolio-7.jpg)' }}>
                             <div className="desc">
                                 <h3>Project Name</h3>
@@ -78,7 +78,7 @@ const ProjectsSection = () => {
                             </div>
                         </a>
                     </div>
-                    <div className="col-md-3 text-center col-padding animate-box">
+                    <div className="col-md-3 text-center col-padding">
                         <a href="#" className="work-item" style={{ backgroundImage: 'url(images/portfolio-8.jpg)' }}>
                             <div className="desc">
                                 <h3>Project Name</h3>

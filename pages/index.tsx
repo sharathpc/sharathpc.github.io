@@ -7,6 +7,7 @@ import ArticlesSection from '../components/ArticlesSection'
 import ExperienceSection from '../components/ExperienceSection'
 import FooterSection from '../components/FooterSection'
 import HeaderSection from '../components/HeaderSection'
+import MenuSection from '../components/MenuSection'
 import ProjectsSection from '../components/ProjectsSection'
 import QuotesSection from '../components/QuotesSection'
 import ServicesSection from '../components/ServicesSection'
@@ -35,6 +36,7 @@ const Home: NextPage = () => {
         <meta name="twitter:card" content="" />
       </Head>
       <div id="page">
+        <MenuSection />
         <HeaderSection />
         <AboutMeSection />
         <ExperienceSection />

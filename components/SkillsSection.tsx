@@ -2,7 +2,7 @@ import { Fade } from "react-awesome-reveal";
 
 const SkillsSection = () => {
     const data = {
-        sectionHeading: 'My Skills',
+        sectionHeading: 'Skills',
         frontend: [{
             label: 'HTML5',
             imgUrl: 'https://ik.imagekit.io/sharathpc/protfolio/skills/frontend/html5_y_-nwrJhQ.svg',
@@ -186,7 +186,7 @@ const SkillsSection = () => {
     }
 
     return (
-        <div id="skills-section" className="animate-box">
+        <div id="skills-section">
             <div className="container">
                 <div className="row">
                     <div className="col-md-8 offset-md-2 text-center heading">
