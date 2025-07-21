@@ -5,8 +5,7 @@ const AboutMeSection = () => {
         sectionHeading: 'About Me',
         helloText: 'Hello There!',
         descriptionBlocks: [
-            'Creative and highly motivated full stack developer with 6+ years of experience in website design, development, and deployment process.',
-            'Ability to produce optimised solutions, clean concise code by hand and pixel perfect renders from designs. Proficient in building web and mobile applications.'
+            '9+ years of experience designing and delivering high-performance web and mobile applications. Expert in micro-frontend architectures, server-side rendering, CI/CD pipelines, and cloud integrations. Proven track record of improving performance, scalability, and maintainability through reusable component libraries, automated deployments, and best‑practice technical governance.',
         ],
         fieldsList: [{
             label: 'First Name',
@@ -16,10 +15,10 @@ const AboutMeSection = () => {
             value: 'Pyarasani',
         }, {
             label: 'Email',
-            value: 'sharathchandra0033@gmail.com',
+            value: 'sharathchandra.pyarasani@gmail.com',
         }, {
             label: 'Country',
-            value: 'India',
+            value: 'Columbus, Ohio, United States',
         }, {
             label: 'Languages',
             value: 'English, Hindi and Telugu',
@@ -29,12 +28,12 @@ const AboutMeSection = () => {
     return (
         <div id="about-section">
             <div className="container">
-                <div className="row">
+                <div key="heading" className="row">
                     <div className="col-md-8 offset-md-2 text-center heading">
                         <h2>{data.sectionHeading}</h2>
                     </div>
                 </div>
-                <div className="row">
+                <div key="content" className="row">
                     <Fade className="col-md-6" cascade damping={0.1} direction="up" triggerOnce>
                         <ul className="info">
                             {data.fieldsList.map((field, fIndex) =>

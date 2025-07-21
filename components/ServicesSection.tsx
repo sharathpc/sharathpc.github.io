@@ -14,7 +14,7 @@ const ServicesSection = () => {
         }, {
             iconClassName: 'icon-mobile',
             mainText: 'Mobile Development',
-            subText: 'Building native feel mobile applications for IOS/Android using Dart & Flutter'
+            subText: 'Building native feel mobile applications for IOS/Android using Flutter or React Native'
         }]
     }
 
@@ -22,12 +22,12 @@ const ServicesSection = () => {
         <div id="services-section" className="global-bg-dark">
             <div className="container">
                 <div className="services-padding">
-                    <div className="row">
+                    <div key="heading" className="row">
                         <div className="col-md-8 offset-md-2 text-center heading">
                             <h2>{data.sectionHeading}</h2>
                         </div>
                     </div>
-                    <div className="row">
+                    <div key="content" className="row">
                         <Fade className="col-md-4 text-center" cascade damping={0.1} direction="up" triggerOnce>
                             {data.list.map((item, itemIndex) =>
                                 <div className="feature-left" key={itemIndex}>

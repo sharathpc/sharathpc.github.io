@@ -18,13 +18,13 @@ const MenuSection = () => {
         }, {
             id: 'skills-section',
             label: 'Skills',
-        }/* , {
+        }, {
             id: 'work-section',
             label: 'Projects',
         }, {
             id: 'blogs-section',
             label: 'Articles',
-        } */, {
+        }, {
             id: 'footer-section',
             label: 'Footer',
         }]

@@ -32,10 +32,6 @@ const SkillsSection = () => {
             imgUrl: 'https://ik.imagekit.io/sharathpc/protfolio/skills/frontend/typescript_q7yZNCvHA.svg',
             link: 'https://www.typescriptlang.org'
         }, {
-            label: 'jQuery',
-            imgUrl: 'https://ik.imagekit.io/sharathpc/protfolio/skills/frontend/jquery_D_eVfX-Kh.png',
-            link: 'https://jquery.com'
-        }, {
             label: 'React',
             imgUrl: 'https://ik.imagekit.io/sharathpc/protfolio/skills/frontend/react_oyoz_Jih6a.svg',
             link: 'https://reactjs.org'
@@ -44,17 +40,9 @@ const SkillsSection = () => {
             imgUrl: 'https://ik.imagekit.io/sharathpc/protfolio/skills/frontend/angular__JkZ984GEW.svg',
             link: 'https://angular.io'
         }, {
-            label: 'Vue',
-            imgUrl: 'https://ik.imagekit.io/sharathpc/protfolio/skills/frontend/vuejs_X4KhY2Xdj.svg',
-            link: 'https://vuejs.org'
-        }, {
             label: 'NextJs',
             imgUrl: 'https://ik.imagekit.io/sharathpc/protfolio/skills/frontend/nextjs_TI-zp3Ut3.png',
             link: 'https://nextjs.org'
-        }, {
-            label: 'NuxtJs',
-            imgUrl: 'https://ik.imagekit.io/sharathpc/protfolio/skills/frontend/nuxtjs__U5-OwJp-.png',
-            link: 'https://nuxtjs.org'
         }, {
             label: 'Redux',
             imgUrl: 'https://ik.imagekit.io/sharathpc/protfolio/skills/frontend/redux_1Cg0TKGUz.svg',
@@ -91,10 +79,6 @@ const SkillsSection = () => {
             label: 'Playwright',
             imgUrl: 'https://ik.imagekit.io/sharathpc/protfolio/skills/frontend/playwright_cu7j7kdMX.png',
             link: 'https://playwright.dev'
-        }, {
-            label: 'Photoshop',
-            imgUrl: 'https://ik.imagekit.io/sharathpc/protfolio/skills/frontend/photoshop_1AoQhUzfy2.svg',
-            link: 'https://www.adobe.com/in/products/photoshop.html'
         }],
         backend: [{
             label: 'NodeJs',
@@ -108,10 +92,6 @@ const SkillsSection = () => {
             label: 'NestJs',
             imgUrl: 'https://ik.imagekit.io/sharathpc/protfolio/skills/backend/nestjs_7P8XJ97UDp.svg',
             link: 'https://nestjs.com'
-        }, {
-            label: 'Dart',
-            imgUrl: 'https://ik.imagekit.io/sharathpc/protfolio/skills/backend/dart_jB5RjRhIb.svg',
-            link: 'https://dart.dev'
         }, {
             label: 'OAuth2',
             imgUrl: 'https://ik.imagekit.io/sharathpc/protfolio/skills/backend/oauth2_iGSkA1yh3N.svg',
@@ -142,26 +122,14 @@ const SkillsSection = () => {
             imgUrl: 'https://ik.imagekit.io/sharathpc/protfolio/skills/database/postgres_yxUyo4_y_.svg',
             link: 'https://www.postgresql.org'
         }],
-        devops: [{
-            label: 'Linux',
-            imgUrl: 'https://ik.imagekit.io/sharathpc/protfolio/skills/devops/linux_V546vBYum2.svg',
-            link: 'https://www.linux.org'
-        }, {
+        devops: [ {
             label: 'Nginx',
             imgUrl: 'https://ik.imagekit.io/sharathpc/protfolio/skills/devops/nginx_wmAmARVga_.svg',
             link: 'https://www.nginx.com'
         }, {
-            label: 'Git',
-            imgUrl: 'https://ik.imagekit.io/sharathpc/protfolio/skills/devops/git_WetyEWuc8B.svg',
-            link: 'https://git-scm.com'
-        }, {
             label: 'Gitlab CI',
             imgUrl: 'https://ik.imagekit.io/sharathpc/protfolio/skills/devops/gitlabci_lQMzHMrAj8.svg',
             link: 'https://docs.gitlab.com/ee/ci'
-        }, {
-            label: 'Github Actions',
-            imgUrl: 'https://ik.imagekit.io/sharathpc/protfolio/skills/devops/githubactions_DsWABmQt_i.png',
-            link: 'https://github.com/features/actions'
         }, {
             label: 'Docker',
             imgUrl: 'https://ik.imagekit.io/sharathpc/protfolio/skills/devops/docker_For5Colb-x.svg',
@@ -188,13 +156,13 @@ const SkillsSection = () => {
     return (
         <div id="skills-section">
             <div className="container">
-                <div className="row">
+                <div key="heading" className="row">
                     <div className="col-md-8 offset-md-2 text-center heading">
                         <h2>{data.sectionHeading}</h2>
                     </div>
                 </div>
 
-                <div className="row row-pb-md">
+                <div key="content" className="row row-pb-md">
                     <div className="col-md-12 text-center skills-container">
                         <h3 className="skill-group-heading">Frontend</h3>
                         <div className=" skills-group">

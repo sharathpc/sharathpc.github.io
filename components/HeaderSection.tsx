@@ -8,7 +8,7 @@ const HeaderSection = () => {
 
     const data = {
         bannerUrl: 'https://ik.imagekit.io/sharathpc/protfolio/github/banner_IHMyYVIEg.gif',
-        profileImgUrl: 'https://ik.imagekit.io/sharathpc/protfolio/profile-pic_rzn51RRjj.jpg',
+        profileImgUrl: 'https://ik.imagekit.io/sharathpc/protfolio/IMG_2722_eN-gwFt3L.jpg',
         fullName: 'Sharath Chandra',
         skills: [
             `I'm a <span class="service-name">Web Developer</span>`,
@@ -27,10 +27,6 @@ const HeaderSection = () => {
             title: 'Medium',
             className: 'icon-blogger',
             href: 'https://sharathpc.medium.com'
-        }, {
-            title: 'Twitter',
-            className: 'icon-twitter2',
-            href: 'https://twitter.com/sharath0033'
         }]
     }
 

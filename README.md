@@ -1,34 +1,84 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Portfolio Website
 
-## Getting Started
+![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+![Build](https://img.shields.io/badge/build-passing-success)
 
-First, run the development server:
+A modern, responsive personal portfolio website built with Next.js and TypeScript. Showcase your projects, experience, skills, and articles in a clean, professional layout.
 
-```bash
-npm run dev
-# or
-yarn dev
+---
+
+## 🚀 Features
+
+- Responsive design for all devices
+- Sections for About Me, Experience, Projects, Skills, Services, Articles, and Quotes
+- Customizable content and styles
+- SEO-friendly
+- Easy to deploy on Vercel, Netlify, or any static hosting
+
+---
+
+## 🛠️ Tech Stack
+
+- [Next.js](https://nextjs.org/) (React Framework)
+- [TypeScript](https://www.typescriptlang.org/)
+- [SCSS](https://sass-lang.com/)
+
+---
+
+## 📦 Folder Structure
+
+```
+sharathpc.github.io/
+├── components/         # Reusable React components for each section
+├── pages/              # Next.js pages (main entry: index.tsx)
+├── public/             # Static assets (images, fonts, favicon)
+├── styles/             # SCSS stylesheets
+├── package.json        # Project metadata and scripts
+├── tsconfig.json       # TypeScript configuration
+└── README.md           # Project documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## ⚡ Getting Started
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/sharathpc.github.io.git
+   cd sharathpc.github.io
+   ```
+2. **Install dependencies:**
+   ```bash
+   yarn install
+   # or
+   npm install
+   ```
+3. **Run the development server:**
+   ```bash
+   yarn dev
+   # or
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+---
 
-## Learn More
+## 🎨 Customization
 
-To learn more about Next.js, take a look at the following resources:
+- Update content in the `components/` directory (e.g., AboutMeSection.tsx, ProjectsSection.tsx, etc.)
+- Add or replace images in `public/images/`
+- Modify styles in `styles/`
+- Update site metadata in `pages/_document.tsx` and `next.config.js`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🤝 Contributing
 
-## Deploy on Vercel
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or suggestions.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).

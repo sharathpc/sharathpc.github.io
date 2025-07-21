@@ -42,8 +42,8 @@ const Home: NextPage = () => {
         <ExperienceSection />
         <ServicesSection />
         <SkillsSection />
-        {/* <ProjectsSection />
-        <ArticlesSection /> */}
+        <ProjectsSection />
+        <ArticlesSection />
         <QuotesSection />
         <FooterSection />
         <ScrollToTop top={500} smooth component={
