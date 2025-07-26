@@ -4,9 +4,10 @@ const ArticlesSection = () => {
     const [articles, setArticles] = useState<any[]>([]);
 
     useEffect(() => {
-        fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@sharathpcc")
+        fetch("https://api.rss2json.com/v1/api.json?rss_url=https://sharathpc.medium.com")
             .then(res => res.json())
-            .then(data => setArticles(data.items));
+            .then(data => setArticles(data.items))
+            .catch(() => setArticles([]));
     }, []);
 
     return (
@@ -18,7 +19,7 @@ const ArticlesSection = () => {
                     </div>
                 </div>
                 <div key="content" className="row">
-                    {articles.map((article) =>
+                    {articles?.map((article) =>
                         <div key={article.guid} className="col-md-4">
                             <div className="blog-item">
                                 <img className="blog-bg" src={article.description.match(/<img[^>]+src="([^">]+)"/)[1]} alt="Image" />

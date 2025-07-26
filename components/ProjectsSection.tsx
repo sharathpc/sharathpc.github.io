@@ -12,7 +12,8 @@ const ProjectsSection = () => {
                     const dateTimeB = new Date(b.updated_at);
                     return new Date(dateTimeB).getTime() - dateTimeA.getTime();
                 }));
-            });
+            })
+            .catch(() => setProjects([]));
     }, []);
 
     return (
@@ -24,7 +25,7 @@ const ProjectsSection = () => {
                     </div>
                 </div>
                 <div key="content" className="row">
-                    {projects.map(item =>
+                    {projects?.map(item =>
                         <div key={item.id} className="col-md-3 text-center col-padding">
                             <a href={item.url} className="work-item" style={{ backgroundImage: 'url(images/portfolio-1.jpg)' }}>
                                 <div className="desc">
