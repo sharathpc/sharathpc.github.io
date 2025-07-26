@@ -25,7 +25,7 @@ const ProjectsSection = () => {
                 </div>
                 <div key="content" className="row">
                     {projects.map(item =>
-                        <div className="col-md-3 text-center col-padding">
+                        <div key={item.id} className="col-md-3 text-center col-padding">
                             <a href={item.url} className="work-item" style={{ backgroundImage: 'url(images/portfolio-1.jpg)' }}>
                                 <div className="desc">
                                     <h3>{item.name}</h3>
