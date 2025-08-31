@@ -4,7 +4,7 @@ const ArticlesSection = () => {
     const [articles, setArticles] = useState<any[]>([]);
 
     useEffect(() => {
-        fetch("https://api.rss2json.com/v1/api.json?rss_url=https://sharathpc.medium.com")
+        fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/@sharathpc/feed")
             .then(res => res.json())
             .then(data => setArticles(data.items))
             .catch(() => setArticles([]));

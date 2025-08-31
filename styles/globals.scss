@@ -803,18 +803,57 @@ figure {
 			height: 270px;
 		}
 
+		/* Gradient 1 */
+		&.g1 {
+			background: linear-gradient(135deg, #8a84e2, #84fab0);
+		}
+
+		/* Gradient 2 */
+		&.g2 {
+			background: linear-gradient(135deg, #fddb92, #d1fdff);
+		}
+
+		/* Gradient 3 */
+		&.g3 {
+			background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+		}
+
+		/* Gradient 4 */
+		&.g4 {
+			background: linear-gradient(135deg, #a8edea, #fed6e3);
+		}
+
+		/* Gradient 5 */
+		&.g5 {
+			background: linear-gradient(135deg, #b993d6, #8ca6db);
+		}
+
+		/* Gradient 6 */
+		&.g6 {
+			background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+		}
+
+		/* Gradient 7 */
+		&.g7 {
+			background: linear-gradient(135deg, #a2c0cc, #fceea7);
+		}
+
+		/* Gradient 8 */
+		&.g8 {
+			background: linear-gradient(135deg, #b39ddb, #e6c3f6);
+		}
+
 		.desc {
 			display: table-cell;
 			vertical-align: middle;
 			height: 270px;
-			background: $brand-white;
-			opacity: 0;
 			@include transition(0.3s);
 
 			h3 {
+				color: $brand-white;
 				font-size: 20px;
-				-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-				transition: transform 0.3s, opacity 0.3s;
+				-webkit-transition: -webkit-transform 0.3s;
+				transition: transform 0.3s;
 				-webkit-transform: translate3d(0, -15px, 0);
 				transform: translate3d(0, -15px, 0);
 			}
@@ -823,8 +862,8 @@ figure {
 				display: block;
 				color: lighten($brand-black, 60%);
 				font-size: 14px;
-				-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-				transition: transform 0.3s, opacity 0.3s;
+				-webkit-transition: -webkit-transform 0.3s;
+				transition: transform 0.3s;
 				-webkit-transform: translate3d(0, 15px, 0);
 				transform: translate3d(0, 15px, 0);
 			}
@@ -847,7 +886,6 @@ figure {
 
 		&:hover {
 			.desc {
-				opacity: 1;
 
 				h3 {
 					-webkit-transform: translate3d(0, 0, 0);
