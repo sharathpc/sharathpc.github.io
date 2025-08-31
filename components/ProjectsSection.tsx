@@ -27,7 +27,7 @@ const ProjectsSection = () => {
                 <div key="content" className="row">
                     {projects?.map(item =>
                         <div key={item.id} className="col-md-3 text-center col-padding">
-                            <a href={item.svn_url} target="_blank" rel="noreferrer" className={`work-item g${Math.floor(Math.random() * 8) + 1}`}>
+                            <a href={item.svn_url} target="_blank" rel="noreferrer" className={`work-item g${Math.floor(Math.random() * 4) + 1}`}>
                                 <div className="desc">
                                     <h3>{item.name}</h3>
                                 </div>

@@ -794,6 +794,7 @@ figure {
 		width: 100%;
 		display: table;
 		overflow: hidden;
+		opacity: 0.8;
 
 		@include media-breakpoint-down(sm) {
 			height: 400px;
@@ -805,12 +806,12 @@ figure {
 
 		/* Gradient 1 */
 		&.g1 {
-			background: linear-gradient(135deg, #8a84e2, #84fab0);
+			background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
 		}
 
 		/* Gradient 2 */
 		&.g2 {
-			background: linear-gradient(135deg, #fddb92, #d1fdff);
+			background: linear-gradient(135deg, #b993d6, #8ca6db);
 		}
 
 		/* Gradient 3 */
@@ -820,26 +821,6 @@ figure {
 
 		/* Gradient 4 */
 		&.g4 {
-			background: linear-gradient(135deg, #a8edea, #fed6e3);
-		}
-
-		/* Gradient 5 */
-		&.g5 {
-			background: linear-gradient(135deg, #b993d6, #8ca6db);
-		}
-
-		/* Gradient 6 */
-		&.g6 {
-			background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
-		}
-
-		/* Gradient 7 */
-		&.g7 {
-			background: linear-gradient(135deg, #a2c0cc, #fceea7);
-		}
-
-		/* Gradient 8 */
-		&.g8 {
 			background: linear-gradient(135deg, #b39ddb, #e6c3f6);
 		}
 
